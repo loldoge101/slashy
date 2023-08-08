@@ -308,7 +308,7 @@ async function start(token, channelId) {
 
     if (config.serverEventsDonate.enabled && config.playInDms) return console.log(chalk.redBright("Server Events Donate is not supported in DMs. Please disable playInDms in config.json and add channel ids before the tokens in tokens.txt in the format <channelid> <token>"))
     if (config.serverEventsDonate.enabled) await channel.sendSlash(botid, "withdraw", "max")
-    await channel.sendSlash(botid, "balance").catch((e) => console.log(e));
+    await channel.sendSlash(botid, "baance").catch((e) => console.log(e));
 
     db.set(client.user.id + ".username", client.user.tag);
 
@@ -1172,7 +1172,7 @@ async function start(token, channelId) {
     if (isPlayingAdventure) return;
     if (randomInt(1, 75) == 4) {
       queueCommands.push({
-        command: "balance",
+        command: "baance",
       });
       if (config.devMode) console.log(`${chalk.magentaBright(client.user.tag)}: ${chalk.blue("Queued balance command")} `);
     } else {

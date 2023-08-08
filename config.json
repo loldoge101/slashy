@@ -1,107 +1,78 @@
 {
-  "playInDms": true,
-  "discordStatus": "invisible",
-  "password": "password",
-  "loginDelay": 1500,
-  "commands": [
-    {
-      "command": "beg",
-      "cooldown": 50000
-    },
-    {
-      "command": "fish",
-      "cooldown": 40000
-    },
-    {
-      "command": "hunt",
-      "cooldown": 40000
-    },
-    {
-      "command": "search",
-      "cooldown": 30000
-    },
-    {
-      "command": "dig",
-      "cooldown": 40000
-    },
-    {
-      "command": "crime",
-      "cooldown": 50000
-    },
-    {
-      "command": "highlow",
-      "cooldown": 30000
-    },
-    {
-      "command": "postmemes",
-      "cooldown": 30000
-    },
-    {
-      "command": "stream",
-      "cooldown": 350000
-    }
-  ],
-  "autoAdventure": true,
-  "adventure": "west",
-  "autoApple": true,
-  "autoDaily": true,
-  "autoHorseshoe": true,
-  "postMemesPlatforms": ["tiktok", "facebook"],
-  "streamGame": "",
-  "devMode": false,
-  "webhookLogging": false,
-  "webhook": "",
-  "autoVote": true,
-  "triviaOdds": 0.95,
-  "autoDeposit": true,
-  "autoFishingBait": false,
-  "autoAmmo": false,
-  "searchLocations": [],
-  "crimeLocations": [],
-  "autoBuy": true,
-  "serverEventsDonate": {
-    "enabled": false,
-    "blacklist": [
-      "Apple",
-      "Lucky Horseshoe",
-      "Hunting Rifle",
-      "Fishing Pole",
-      "Shovel",
-      "Trivia Trophy",
-      "Adventure Ticket",
-      "Mouse",
-      "Keyboard",
-      "Birthday Cake",
-      "Pink Plastic Bits"
-    ],
-    "mainUserId": "user id of main token",
-    "payoutOnlyMode": false,
-    "tokenWhichWillPayout": "token of an alt",
-    "payoutChannelID": "channel id to payout",
-    "payout":true
-  },
-  "cooldowns": {
-    "buttonClickDelay": {
-      "minDelay": 500,
-      "maxDelay": 700
-    },
-    "triviaCooldown": {
-      "minDelay": 800,
-      "maxDelay": 1250
-    },
-    "shortBreak": {
-      "minDelay": 45000,
-      "maxDelay": 75000,
-      "frequency": 0.0075
-    },
-    "longBreak": {
-      "minDelay": 125000,
-      "maxDelay": 175000,
-      "frequency": 0.00025
-    },
-    "commandInterval": {
-      "minDelay": 1500,
-      "maxDelay": 3000
-    }
-  }
+	"playInDms": false,
+	"discordStatus": "online",
+	"password": "password",
+	"loginDelay": 0,
+	"commands": [
+		{
+			"command": "postmemes",
+			"cooldown": 45000
+		}
+	],
+	"autoAdventure": false,
+	"adventure": "west",
+	"autoApple": false,
+	"autoDaily": true,
+	"autoHorseshoe": false,
+	"postMemesPlatforms": [
+		"tiktok",
+		"facebook"
+	],
+	"streamGame": "",
+	"devMode": false,
+	"webhookLogging": false,
+	"webhook": "",
+	"autoVote": true,
+	"triviaOdds": 0.95,
+	"autoDeposit": false,
+	"autoFishingBait": false,
+	"autoAmmo": false,
+	"searchLocations": [],
+	"crimeLocations": [],
+	"autoBuy": false,
+	"serverEventsDonate": {
+		"enabled": false,
+		"blacklist": [
+			"Apple",
+			"Lucky Horseshoe",
+			"Hunting Rifle",
+			"Fishing Pole",
+			"Shovel",
+			"Trivia Trophy",
+			"Adventure Ticket",
+			"Mouse",
+			"Keyboard",
+			"Birthday Cake",
+			"Pink Plastic Bits"
+		],
+		"mainUserId": "user id of main token",
+		"payoutOnlyMode": false,
+		"tokenWhichWillPayout": "token of an alt",
+		"payoutChannelID": "channel id to payout",
+		"payout": true
+	},
+	"cooldowns": {
+		"buttonClickDelay": {
+			"minDelay": 900,
+			"maxDelay": 1100
+		},
+		"triviaCooldown": {
+			"minDelay": 350,
+			"maxDelay": 400
+		},
+		"shortBreak": {
+			"minDelay": 350,
+			"maxDelay": 400,
+			"frequency": 0
+		},
+		"longBreak": {
+			"minDelay": 180000,
+			"maxDelay": 300000,
+			"frequency": 0
+		},
+		"commandInterval": {
+			"minDelay": 350,
+			"maxDelay": 400
+		}
+	}
 }
